@@ -47,6 +47,14 @@ use([
   DatasetComponent,
 ]);
 
+// my tools
+import EChartsFull from './dEcharts/echartsFull.vue'
+import EChartsData from './dEcharts/echartsData.vue'
+import DCharts from './dEcharts/dcharts.vue'
+Vue.component('d-chart',DCharts)
+Vue.component('chart-full',EChartsFull)
+Vue.component('chart-data',EChartsData)
+
 new Vue({
   render: h => h(App),
   router,

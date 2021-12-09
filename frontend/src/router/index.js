@@ -6,6 +6,11 @@ Vue.use(VueRouter)
 
 const routes = [
     {
+        path: '/chart',
+        name: 'chart',
+        component: () => import('../views/Charts.vue')
+    },
+    {
         path: '*',
         name: 'index',
         component: () => import('../views/index.vue')
